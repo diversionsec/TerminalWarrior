@@ -1,5 +1,5 @@
 <p align="center">
-<img src="TerminalWarrior.gif">
+<img src="logo.gif">
 </p>
 
 A containersized command-line cybersecurity challenge built in Python, simulating a Linux/Windows terminal where players solve hacking-style puzzles using real Linux/Windows commands.
