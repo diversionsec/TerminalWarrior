@@ -19,7 +19,7 @@ A containersized command-line cybersecurity challenge built in Python, simulatin
 
 ---
 ### 🐧 Linux Terminal Levels:
-1. **Intro Challenge**: `UNDER REDESIGN`Explore directories and find hidden files | Basic Linux commands `ls`, `cat`, `cd`, `pwd`, `whoami`
+1. **Intro Challenge**: Explore directories and find hidden files | Basic Linux commands `ls`, `cat`, `cd`, `pwd`, `whoami`
 2. **Permissions & Ownership**: `UNDER REDESIGN`Learn how to view and modify file permissions | `chmod`, `chown`, `sudo`, `file modes`
 3. **Searching the system**: `UNDER REDESIGN`Find hidden files and analyze logs | `grep`, `find`, `less`, `head`, `tail`
 4. **Networking Challenge**: `COMING MARCH` Discover hosts and services | `ping`, `netcat`, `curl`, `ssh`
@@ -45,7 +45,7 @@ A containersized command-line cybersecurity challenge built in Python, simulatin
 
 #### Step 1: Clone the repo
 ```bash
-git clone https://github.com/Diversion-CTF/TerminalWarrior.git
+git clone https://github.com/diversionsec/TerminalWarrior.git
 ```
 #### Step 2: Enter the project repo
 ```bash
@@ -64,7 +64,7 @@ python -m cli_lab.main
 
 #### Step 1: Clone the repo
 ```bash
-git clone https://github.com/Diversion-CTF/TerminalWarrior.git
+git clone https://github.com/diversionsec/TerminalWarrior.git
 ```
 #### Step 2: Enter the project
 ```bash
