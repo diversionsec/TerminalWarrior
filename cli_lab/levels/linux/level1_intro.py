@@ -9,13 +9,22 @@ def build_challenge_list(state):
         "",
         f"{'✅' if state[3] else '◻️'} 3) Find the ssh password for other computer.",
         "",
-        f"{'✅' if state[4] else '◻️'} 4) Find the ssh IP address for other computer.",
+        f"{'✅' if state[4] else '◻️'} 4) Find the IP address for other computer.",
         "",
         f"{'✅' if state[5] else '◻️'} 5) Successfully ssh into other computer.",
         "",
         f"{'✅' if state[6] else '◻️'} 6) Find hidden.txt and read it on other computer.",
         "",
     ]
+
+def print_help():
+    print(" help - Display this help menu")
+    print(" -ls / -la - list Files in current directory")
+    print(" cat <file> - Read a file, cat is short for concatenate")
+    print(" cd <dir> - Change to a Directory")
+    print(" pwd - Print Working Directory, prints current directory path")
+    print(" whoami - Displays the name of user you are logged in as")
+    print(" ssh <Username>@<IP>- Create a secure peer to peer connection to another computer")
 
 def print_challenges(state):
     for line in build_challenge_list(state):
@@ -24,10 +33,6 @@ def print_challenges(state):
 def main():
 
     challenge_state = {i: False for i in range(1, 7)}
-
-    print("Type command 'challenge' to see your progress.\n")
-    input("Press Enter to start...")
-
 
     processes = random.randint(100, 200)
     memoryusage = random.randint(100, 800)
@@ -39,9 +44,10 @@ def main():
     other_ip_address = ".".join(ip_parts)
     ip_address = ".".join(ip_parts)
 
-    print("\nWelcome to the Linux CLI Flag Challenge level 1 (INTRO) made by (Fr4nc0eur)\n")
+    print("\nWelcome to the Linux CLI Flag Challenge level 1 (INTRO) made by (Diversion/diversionsec)\n")
+    print("type the commands 'help' and 'challenge to access help menu and view challenges.")
     input("Press Enter to continue...")
-    print()
+    print("")
 
     print_challenges(challenge_state)
     print("\nWelcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-91-generic x86_64)\n")
@@ -66,12 +72,15 @@ def main():
 
     while True:
         if on_remote:
-            prompt = f"ban5hee@linux-remote:~$ "
+            prompt = f" "+ ssh_username +"@linux:~$ "
         else:
             prompt = f"user@linux:{current_directory}$ "
 
         command = input(prompt).strip()
 
+        if command == "help":
+            print_help()
+            continue
 
         if command == "exit":
 
@@ -147,12 +156,11 @@ def main():
                         print(f"cat: {filename}: No such file")
                 else:
                     print(f"cat: {filename}: No such file")
-            elif command.startswith("ssh"):
+            elif command == "ssh " + randomusername + "@" + other_ip_address + "":
                 print("Attempting to ssh into other computer...")
-                user_input = input("Username: ").strip()
                 password_input = input("Password: ").strip()
 
-                if user_input == randomusername and password_input == randompassword:
+                if password_input == randompassword:
                     print("Correct credentials. Successfully ssh'd into other computer.")
                     on_remote = True
                     if not challenge_state[5]:
@@ -177,7 +185,7 @@ def main():
             elif command == "":
                 continue
             else:
-                print(f"{command}: command not found on remote")
+                print(f"{command}: command not found")
 
 if __name__ == "__main__":
     main()
