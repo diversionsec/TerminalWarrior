@@ -22,8 +22,8 @@ A containersized command-line cybersecurity challenge built in Python, simulatin
 1. **Intro Challenge**: Explore directories and find hidden files | Basic Linux commands `ls`, `cat`, `cd`, `pwd`, `whoami`
 2. **Permissions & Ownership**: `UNDER REDESIGN`Learn how to view and modify file permissions | `chmod`, `chown`, `sudo`, `file modes`
 3. **Searching the system**: `UNDER REDESIGN`Find hidden files and analyze logs | `grep`, `find`, `less`, `head`, `tail`
-4. **Networking Challenge**: `COMING MARCH` Discover hosts and services | `ping`, `netcat`, `curl`, `ssh`
-5. **Cryptography & Decoding**: `COMING APRIL` Decode hidden messages and hash files | `base64`, `hashing`, `simple ciphers`
+4. **Networking Challenge**: `COMING July` Discover hosts and services | `ping`, `netcat`, `curl`, `ssh`
+5. **Cryptography & Decoding**: `COMING August` Decode hidden messages and hash files | `base64`, `hashing`, `simple ciphers`
 
 ### 🪟 Windows Terminal Levels:
 1. **Intro challenge**: Navigate folders and uncover hidden files | Basic Window commands `dir`, `cd`, `type`, `cls`, `echo`
