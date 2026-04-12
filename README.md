@@ -4,7 +4,7 @@
 
 A containersized command-line cybersecurity challenge built in Python, simulating a Linux/Windows terminal where players solve hacking-style puzzles using real Linux/Windows commands.
 
-##  Overview ![Python](https://img.shields.io/badge/python-3.9%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+##  Overview ![Python](https://img.shields.io/badge/python-3.9%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green) [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/diversionsec/TerminalWarrior) [![GitHub Stars](https://img.shields.io/github/stars/diversionsec/TerminalWarrior?style=social)](https://github.com/diversionsec/TerminalWarrior)
 **TerminalWarrior** is an interactive command-line training game where players explore a simulated Linux/Windows filesystem to uncover hidden flags, passwords, and secrets using real terminal commands.
 
 ## ✨ Features
